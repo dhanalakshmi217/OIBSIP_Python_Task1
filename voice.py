@@ -74,7 +74,7 @@ def google_search(query):
     speak("Here are the search results")
 
 def get_weather(city):
-    api_key = "34cd9a62193219fca63ff6a270d90116"
+    api_key = "123456789"
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city},IN&appid={api_key}&units=metric"
     data = requests.get(url).json()
     if data["cod"] != 200:
@@ -85,7 +85,7 @@ def get_weather(city):
         speak(f"The temperature in {city} is {temp} degree celsius with {desc}")
 
 def get_news():
-    api_key = "d6283e1e62db4dd1abb110704f30ae3f"
+    api_key = "sdftyuio09876"
     url = f"https://newsapi.org/v2/top-headlines?country=in&apiKey={api_key}"
 
     data = requests.get(url).json()
